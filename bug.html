@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //This is a common mistake of missing a semicolon in Javascript which cause an error in the html
+    let x = 10
+    document.getElementById("myDiv").innerHTML = x; 
+    
+    //Another way to cause this error is to use incorrect HTML elements or attributes
+    //For example, using an unsupported tag can result in an error 
+    //<unsupportedTag>This will cause an error</unsupportedTag>
+  </script>
+</body>
+</html>
